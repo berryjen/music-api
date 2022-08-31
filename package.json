@@ -1,0 +1,26 @@
+{
+  "name": "music-api",
+  "version": "1.0.0",
+  "description": "random song suggestion",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berryjen/music-api.git"
+  },
+  "keywords": [
+    "music",
+    "api"
+  ],
+  "author": "Jen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/berryjen/music-api/issues"
+  },
+  "homepage": "https://github.com/berryjen/music-api#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
