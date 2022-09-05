@@ -1,0 +1,54 @@
+{
+  "Music": [
+    {
+      "Artist": "Kygo",
+      "Song": "Firestone",
+      "Genre": "Tropical House"
+    },
+    {
+      "Artist": "Sofie Tukker",
+      "Song": "Sun came up",
+      "Genre": "House"
+    },
+    {
+      "Artist": "Beatles",
+      "Song": "I wanna hold your hand",
+      "Genre": "Pop-rock"
+    },
+    {
+      "Artist": "Queen",
+      "Song": "Don't stop me now",
+      "Genre": "Rock"
+    },
+    {
+      "Artist": "Fugees",
+      "Song": "Killing me softly with his song",
+      "Genre": "R&B"
+    },
+    {
+      "Artist": "Nina Simone",
+      "Song": "Feeling good",
+      "Genere": "Jazz"
+    },
+    {
+      "Artist": "Teresa Tang",
+      "Song": "The moon represents my heart",
+      "Genre": "Mandarin- pop"
+    },
+    {
+      "Artist": "Jay Chou",
+      "Song": "Nocturne",
+      "Genre": "Mandarin-pop"
+    },
+    {
+      "Artist": "Sebastian Yatra",
+      "Song": "Tacones rojos",
+      "Genre": "Latin-pop"
+    },
+    {
+      "Artist": "The weekend",
+      "Song": "Out of time",
+      "Genre": "R&B"
+    }
+  ]
+}
