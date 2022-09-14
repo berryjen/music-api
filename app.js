@@ -1,7 +1,6 @@
 const express = require('express');
 const fs = require('fs');
 const app = express();
-const port = 3000;
 
 var melody = {};
 try {
@@ -19,16 +18,25 @@ app.get('/music/:artist', (req, res) => {
 	var result = melody.Music.find((obj) => {
 		return obj.Artist === req.params.artist;
 	});
-	res.json(result);
+
+	if (result !== undefined) {
+		console.log(result);
+		res.json(result);
+	} else {
+		res.status(404).send('Artist not found');
+	}
 });
 
 app.get('/music/:artist/:song', (req, res) => {
 	var result = melody.Music.find((obj) => {
 		return obj.Song === req.params.song && obj.Artist === req.params.artist;
 	});
-	res.json(result);
+	if (result !== undefined) {
+		console.log(result);
+		res.json(result);
+	} else {
+		res.status(404).send('Song not found');
+	}
 });
 
-app.listen(port, () => {
-	console.log(`Example app listening on port ${port}`);
-});
+module.exports = app;
