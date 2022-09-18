@@ -4,7 +4,7 @@
   "description": "random song suggestion",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --maxWorkers=1"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/berryjen/music-api#readme",
   "dependencies": {
+    "axios": "^0.27.2",
     "express": "^4.18.1"
   },
   "devDependencies": {

@@ -1,41 +1,50 @@
 const express = require('express');
 const fs = require('fs');
 const app = express();
+var axios = require('axios');
 
 var melody = {};
-try {
-	const data = fs.readFileSync('./data.json');
-	melody = JSON.parse(data);
-} catch (err) {
-	console.log(`Error reading file from disk: ${err}`);
-}
+var config = {
+  method: 'get',
+  url: 'https://api.deezer.com/chart',
+  headers: { }
+};
+
+axios(config)
+.then(function (response) {
+	melody = response.data;
+})
+.catch(function (error) {
+  console.log(error);
+});
+
 
 app.get('/music', (req, res) => {
 	res.json(melody);
 });
 
 app.get('/music/:artist', (req, res) => {
-	var result = melody.Music.find((obj) => {
-		return obj.Artist === req.params.artist;
+	var result = melody.tracks.data.find((track) => {
+		return track.artist.name === req.params.artist;
 	});
 
 	if (result !== undefined) {
 		console.log(result);
 		res.json(result);
 	} else {
-		res.status(404).send('Artist not found');
+		res.status(500).send('Invalid artist');
 	}
 });
 
 app.get('/music/:artist/:song', (req, res) => {
-	var result = melody.Music.find((obj) => {
-		return obj.Song === req.params.song && obj.Artist === req.params.artist;
+	var result = melody.tracks.data.find((track) => {
+		return track.title === req.params.song && track.artist.name === req.params.artist;
 	});
 	if (result !== undefined) {
 		console.log(result);
 		res.json(result);
 	} else {
-		res.status(404).send('Song not found');
+		res.status(500).send('Invalid song');
 	}
 });
 

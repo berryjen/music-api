@@ -3,52 +3,103 @@
     {
       "Artist": "Kygo",
       "Song": "Firestone",
-      "Genre": "Tropical House"
+      "Genre": "Tropical House",
+      "urls": {
+        "deezer": "https://deezer.com",
+        "apple": "",
+        "spotify": ""
+      }
     },
     {
       "Artist": "Sofie Tukker",
       "Song": "Sun came up",
-      "Genre": "House"
+      "Genre": "House",
+      "urls": {
+        "deezer": "https://deezer.com",
+        "apple": "",
+        "spotify": ""
+      }
     },
     {
       "Artist": "Beatles",
       "Song": "I wanna hold your hand",
-      "Genre": "Pop-rock"
+      "Genre": "Pop-rock",
+      "urls": {
+        "deezer": "https://deezer.com",
+        "apple": "",
+        "spotify": ""
+      }
     },
     {
       "Artist": "Queen",
       "Song": "Don't stop me now",
-      "Genre": "Rock"
+      "Genre": "Rock",
+      "urls": {
+        "deezer": "https://deezer.com",
+        "apple": "",
+        "spotify": ""
+      }
     },
     {
       "Artist": "Fugees",
       "Song": "Killing me softly with his song",
-      "Genre": "R&B"
+      "Genre": "R&B",
+      "urls": {
+        "deezer": "https://billglover.me",
+        "apple": "",
+        "spotify": ""
+      }
     },
     {
       "Artist": "Nina Simone",
       "Song": "Feeling good",
-      "Genere": "Jazz"
+      "Genere": "Jazz",
+      "urls": {
+        "deezer": "https://deezer.com",
+        "apple": "",
+        "spotify": ""
+      }
     },
     {
       "Artist": "Teresa Tang",
       "Song": "The moon represents my heart",
-      "Genre": "Mandarin- pop"
+      "Genre": "Mandarin- pop",
+      "urls": {
+        "deezer": "https://deezer.com",
+        "apple": "",
+        "spotify": ""
+      }
     },
     {
       "Artist": "Jay Chou",
       "Song": "Nocturne",
-      "Genre": "Mandarin-pop"
+      "Genre": "Mandarin-pop",
+      "urls": {
+        "deezer": "https://deezer.com",
+        "apple": "",
+        "spotify": ""
+      }
     },
     {
       "Artist": "Sebastian Yatra",
       "Song": "Tacones rojos",
-      "Genre": "Latin-pop"
+      "Genre": "Latin-pop",
+      "urls": {
+        "deezer": "https://deezer.com",
+        "apple": "",
+        "spotify": ""
+      }
     },
     {
-      "Artist": "The weekend",
+      "Atrist": "The weekend",
       "Song": "Out of time",
-      "Genre": "R&B"
+      "Genre": "R&B",
+      "urls": {
+        "deezer": "https://deezer.com",
+        "apple": "",
+        "spotify": "",
+        "youtube": ""
+      }
     }
   ]
 }
