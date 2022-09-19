@@ -1,5 +1,11 @@
 const request = require('supertest');
 const app = require('./app.js');
+const deezer = require('./deezer.js').loadData;
+
+beforeAll(async () => {
+	app.set('musicChart', await deezer());
+	var melody = app.get("musicChart");
+});
 
 describe('GET /music', () => {
 	test('should be ok, status 200', async () => {
