@@ -15,7 +15,7 @@ describe('GET /music', () => {
 	test('should return an artist', async () => {
 		const response = await request(app).get('/music');
 		console.log(response.body);
-		expect(response.body.tracks.data[0].artist.name).toBe(true);
+		expect(response.body.tracks.data[0]).toHaveProperty('artist.name');
 	});
 });
 
@@ -28,16 +28,16 @@ describe('GET /music/:artist', () => {
 		const response = await request(app).get('/music/Blah');
 		expect(response.statusCode).toBe(500);
 	});
-	test('should respond Artist not found', async () => {
+	test('should respond Invalid artist', async () => {
 		const response = await request(app).get('/music/Matoma');
-		expect(response.text).toBe('Artist not found');
+		expect(response.text).toBe('Invalid artist');
 	});
 });
 
 describe('GET /music/:artist/:song', () => {
 	test('should respond with correct Song ', async () => {
 		const response = await request(app).get('/music/Tom Odell/Another Love');
-		expect(response.body.tracks.data[3].title === 'Another Love').toBe(true);
+		expect(response.body.title === 'Another Love').toBe(true);
 	});
 	test('should respond with 500', async () => {
 		const response = await request(app).get('/music/321/blah');
